@@ -4,7 +4,7 @@ var router = express.Router();
 const Book = require("../models/Books")
 
 /* GET users listing. */
-router.post('/books', function(req, res, next) {
+router.post('/book', function(req, res, next) {
 
     Book.create({
         name: req.body.name,
